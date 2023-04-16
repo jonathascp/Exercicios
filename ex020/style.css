@@ -1,0 +1,28 @@
+
+.div1{
+    display: inline-block;
+    border: 2px solid black;
+    height: 300px;
+    width:  300px;
+
+    background-color: lightblue;
+    
+}
+
+.div2{
+    display: inline-block;
+    border: 2px solid black;
+    height: 300px;
+    width:  300px;
+
+    background-image: linear-gradient(to bottom,yellow,orange);
+}
+
+.div3{
+    display: inline-block;
+    border: 2px solid black;
+    height: 300px;
+    width:  300px;
+
+    background-image: url('imagens/pattern003.png');
+}
