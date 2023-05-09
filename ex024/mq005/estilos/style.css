@@ -23,7 +23,7 @@ nav {
     display: none;
 }
 
-span#burguer {
+#burguer {
     display: block;
     background-color: rgb(56, 56, 56);
     color: white;
@@ -32,7 +32,7 @@ span#burguer {
     cursor: pointer;
 }
 
-span#burguer:hover {
+#burguer:hover {
     background-color: white;
     color: black;
 }

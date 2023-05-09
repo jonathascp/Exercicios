@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/media-query.css">
     <title>Media Query</title>
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu Site</h1>
         <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
@@ -25,7 +26,7 @@
 
     <main>
         <article>
-            <h2>Testando Media Query</h1>
+            <h2>Testando Media Query</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti voluptatibus alias praesentium mollitia dignissimos expedita ea id, vitae illum itaque, nam quas quisquam illo sint optio obcaecati distinctio cupiditate sapiente! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur consectetur facere velit reiciendis perspiciatis neque, rem voluptates vel doloribus fuga, repellat, ea recusandae modi placeat porro nostrum. Quisquam, eaque aspernatur!</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti voluptatibus alias praesentium mollitia dignissimos expedita ea id, vitae illum itaque, nam quas quisquam illo sint optio obcaecati distinctio cupiditate sapiente! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio enim maiores asperiores, voluptatem ex veniam veritatis reiciendis provident rem aspernatur neque ullam sequi perferendis officia rerum iste? Perspiciatis, eius eos?</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti voluptatibus alias praesentium mollitia dignissimos expedita ea id, vitae illum itaque, nam quas quisquam illo sint optio obcaecati distinctio cupiditate sapiente! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et dolore voluptas non ex rerum? Doloremque error perspiciatis quas animi non libero, fugiat consectetur. Corrupti officiis, molestias ad tempore natus non.</p>
@@ -41,6 +42,18 @@
             else 
             {
                 itens.style.display = 'block';
+            }
+        }
+
+        function mudouTamanho()
+        {
+            if(window.innerWidth >= 768)
+            {
+                itens.style.display = 'block';
+            }
+            else
+            {
+                itens.style.display = 'none';
             }
         }
     </script>
